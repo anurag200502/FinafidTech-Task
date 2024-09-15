@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dropdown Sliders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dark-mode-toggle">
+        <button id="toggle-dark-mode">🌙 Dark Mode</button>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-toggle">Adjust Settings</button>
+        <div class="dropdown-menu">
+            <div class="slider-container">
+                <label for="brightness">Brightness <span class="tooltip">🔆</span></label>
+                <input type="range" id="brightness" class="slider" min="0" max="100" value="50">
+                <span class="value-display">50</span>
+            </div>
+            <div class="slider-container">
+                <label for="contrast">Contrast <span class="tooltip">🌓</span></label>
+                <input type="range" id="contrast" class="slider" min="0" max="100" value="50">
+                <span class="value-display">50</span>
+            </div>
+            <div class="slider-container">
+                <label for="volume">Volume <span class="tooltip">🔊</span></label>
+                <input type="range" id="volume" class="slider" min="0" max="100" value="50">
+                <span class="value-display">50</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
